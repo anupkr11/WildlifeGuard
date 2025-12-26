@@ -23,11 +23,11 @@ const Footer = () => {
             <div className="w-10 h-10 bg-green-700 rounded-full flex items-center justify-center">
               <TreePine className="text-white" size={24} />
             </div>
-            <span className="text-xl font-bold text-white">
+            <span className="text-2xl font-bold text-white">
               Guardians
             </span>
           </div>
-          <p className="text-sm leading-relaxed">
+          <p className="text-xl leading-relaxed">
             Government initiative dedicated to protecting India's wildlife and
             preserving natural habitats.
           </p>
@@ -46,7 +46,7 @@ const Footer = () => {
         {/* Links */}
         <div>
           <h3 className="text-white font-bold mb-4">Quick Links</h3>
-          <ul className="space-y-3 text-sm">
+          <ul className="space-y-3 text-xl">
             {["/", "/wildlife", "/programs", "/blog", "/join-team", "/contact"].map(
               (path, i) => (
                 <li key={i}>
@@ -62,7 +62,7 @@ const Footer = () => {
         {/* Contact */}
         <div>
           <h3 className="text-white font-bold mb-4">Contact Info</h3>
-          <ul className="space-y-3 text-sm">
+          <ul className="space-y-3 text-xl">
             <li className="flex items-center gap-2">
               <MapPin size={18} /> New Delhi, India
             </li>
@@ -89,7 +89,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="border-t border-gray-800 text-center py-6 text-sm text-gray-400">
+      <div className="border-t border-gray-800 text-center py-6 text-xl text-gray-400">
         © {new Date().getFullYear()} Guardians of Wildlife. All rights reserved.
       </div>
     </footer>
