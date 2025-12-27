@@ -5,6 +5,8 @@ import { fetchWildlife } from "../redux/wildlifeSlice";
 import AnimalCard from "../components/wildlife/AnimalCard";
 import CategoryFilter from "../components/wildlife/CategoryFilter";
 import Pagination from "../components/wildlife/Pagination";
+import ConservationCharts from "../components/wildlife/ConservationCharts";
+
 
 const ITEMS_PER_PAGE = 9;
 
@@ -72,6 +74,26 @@ const Wildlife = () => {
   }
 
   return (
+    <>{/* ================= HERO SECTION ================= */}
+<section
+  className="relative h-[400px] md:h-[420px] flex items-center justify-center text-center bg-cover bg-center"
+  style={{
+    backgroundImage:
+      "linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1469474968028-56623f02e42e')",
+  }}
+>
+  <div className="px-6">
+    <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+      Wildlife of India
+    </h1>
+    <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
+      Explore and Learn About Our Endangered Species
+    </p>
+  </div>
+</section>
+
+<ConservationCharts data={data} />
+    
     <div
       className="min-h-screen bg-cover bg-center bg-fixed"
       style={{
@@ -81,6 +103,7 @@ const Wildlife = () => {
     >
       <div className="bg-black/50 min-h-screen py-14">
         <div className="max-w-7xl mx-auto px-6">
+        
           <CategoryFilter
             search={search}
             setSearch={setSearch}
@@ -108,6 +131,7 @@ const Wildlife = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
