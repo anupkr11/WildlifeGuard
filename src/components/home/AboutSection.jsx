@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { PrimaryButton } from "../components/ui/Buttons";
+import { PrimaryButton } from "../ui/Buttons";
 
 const AboutSection = () => {
   return (

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
-import { PrimaryButton, OutlineButton } from "../components/ui/Buttons";
+import { PrimaryButton, OutlineButton } from "../ui/Buttons";
 
 const HeroSection = () => {
   return (

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { WhiteButton, OutlineWhiteButton } from "../components/ui/Buttons";
+import { WhiteButton, OutlineWhiteButton } from "../ui/Buttons";
 
 const CTASection = () => {
   return (

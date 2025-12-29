@@ -1,4 +1,10 @@
+import program from "../../pages/Program"
+import { useNavigate } from "react-router-dom";
+
+
 const ProgramsSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
@@ -15,17 +21,17 @@ const ProgramsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {[
             {
-              title: "Wildlife Protection Initiative",
+              title: "Great Barrier Reef Protection Program",
               image: "https://images.unsplash.com/photo-1508780709619-79562169bc64",
               desc: "24/7 wildlife emergency response and protection program",
             },
             {
-              title: "Habitat Restoration Program",
+              title: "African Elephant Protection Initiative",
               image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
               desc: "Restoring and protecting natural habitats across the country",
             },
             {
-              title: "Anti-Poaching Task Force",
+              title: "National Endangered Species Act (ESA)",
               image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
               desc: "Elite unit combating wildlife crime and illegal trafficking",
             },
@@ -38,7 +44,7 @@ const ProgramsSection = () => {
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3">{item.title}</h3>
                 <p className="text-gray-600 mb-6">{item.desc}</p>
-                <button className="w-full border border-green-700 text-green-700 py-2 rounded-lg font-semibold hover:bg-green-700 hover:text-white transition">
+                <button onClick={() => navigate(`/programs/`)} className="w-full border border-green-700 text-green-700 py-2 rounded-lg font-semibold hover:bg-green-700 hover:text-white transition">
                   Learn More
                 </button>
               </div>
@@ -47,7 +53,7 @@ const ProgramsSection = () => {
         </div>
 
         <div className="text-center mt-16">
-          <button className="bg-green-700 hover:bg-green-800 text-white px-8 py-3 rounded-lg font-semibold">
+          <button onClick={() => navigate(`/programs/`)} className="bg-green-700 hover:bg-green-800 text-white px-8 py-3 rounded-lg font-semibold">
             View All Programs →
           </button>
         </div>
