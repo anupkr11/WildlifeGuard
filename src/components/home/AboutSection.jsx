@@ -8,7 +8,7 @@ const AboutSection = () => {
         <img
           src="https://images.unsplash.com/photo-1589556183130-530470785fab"
           alt="Wildlife Conservation"
-          className="rounded-2xl shadow-2xl w-2xl mx-50 h-96 object-cover"
+          className="rounded-2xl shadow-2xl w-[500px] mx-50 h-96 object-cover"
         />
 
         <div className="max-w-3xl mx-auto space-y-8">
