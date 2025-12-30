@@ -7,6 +7,9 @@ import JoinTeam from "./pages/JoinTeam";
 import Contact from "./pages/Contact";
 import Programs from "./pages/Program";
 import ProgramDetails from "./pages/ProgramDetails";
+import Blog from "./pages/Blog";
+import NotFound from "./pages/NotFound";
+
 
 function App() {
   return (
@@ -20,6 +23,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/programs" element={<Programs />} />
         <Route path="/programs/:id" element={<ProgramDetails />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <Footer />

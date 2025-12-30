@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
@@ -20,6 +21,12 @@ const faqs = [
 ];
 
 const FAQSection = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <section className="bg-gray-100 py-20">
       <div className="max-w-5xl mx-auto px-6">
@@ -31,10 +38,27 @@ const FAQSection = () => {
           {faqs.map((item, i) => (
             <div
               key={i}
-              className="bg-white p-6 rounded-lg shadow-sm"
+              className="bg-gray-300 rounded-xl shadow-sm border overflow-hidden"
             >
-              <h4 className="font-semibold mb-2 text-2xl">{item.q}</h4>
-              <p className="text-gray-600 text-xl">{item.a}</p>
+              {/* QUESTION */}
+              <button
+                onClick={() => toggleFAQ(i)}
+                className="w-full flex items-center justify-between px-6 py-5 text-left font-semibold text-lg md:text-xl hover:bg-gray-50 transition"
+              >
+                <span>{item.q}</span>
+                <ChevronDown
+                  className={`transition-transform duration-300 ${
+                    openIndex === i ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+
+              {/* ANSWER  */}
+              {openIndex === i && (
+                <div className="px-6 pb-5 text-gray-600 text-base md:text-lg">
+                  {item.a}
+                </div>
+              )}
             </div>
           ))}
         </div>

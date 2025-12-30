@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-  TreePine,
   Mail,
   Phone,
   MapPin,
@@ -10,6 +9,7 @@ import {
   Instagram,
   Linkedin,
 } from "lucide-react";
+import logo from "../assets/icon.jpeg";
 
 const Footer = () => {
   return (
@@ -20,8 +20,8 @@ const Footer = () => {
         {/* Brand */}
         <div>
           <div className="flex items-center space-x-2 mb-6">
-            <div className="w-10 h-10 bg-green-700 rounded-full flex items-center justify-center">
-              <TreePine className="text-white" size={24} />
+            <div className="w-10 h-10 rounded-full flex items-center justify-center">
+              <img src={logo} alt="logo "/>
             </div>
             <span className="text-2xl font-bold text-white">
               Guardians

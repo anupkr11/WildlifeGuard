@@ -13,7 +13,7 @@ import {
 const COLORS = ["#166534", "#22c55e", "#4ade80", "#86efac"];
 
 const ProgramCharts = ({ program }) => {
-  /* ---------------- TARGET SPECIES ---------------- */
+  /* TARGET SPECIES */
   const species = program["Target Species/Ecosystems"]
     ?.split(",")
     .map((s) => s.trim());
@@ -23,7 +23,7 @@ const ProgramCharts = ({ program }) => {
     value: 1,
   }));
 
-  /* ---------------- PROGRAM AGE ---------------- */
+  /* PROGRAM AGE */
   const currentYear = new Date().getFullYear();
   const age = currentYear - Number(program["Year Launched"]);
 
@@ -34,7 +34,7 @@ const ProgramCharts = ({ program }) => {
     },
   ];
 
-  /* ---------------- FUNDING ---------------- */
+  /* FUNDING */
   const fundingValue = Number(
     program["Funding (USD)"]?.replace(/[^0-9]/g, "")
   );
@@ -52,7 +52,6 @@ const ProgramCharts = ({ program }) => {
         Program Insights
       </h2>
 
-      {/* 🔹 3 CHARTS IN SINGLE ROW */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
         {/* TARGET SPECIES */}

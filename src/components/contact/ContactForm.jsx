@@ -15,7 +15,7 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // If no API → store locally
+    // If no API then store locally
     const queries = JSON.parse(localStorage.getItem("queries")) || [];
     queries.push(form);
     localStorage.setItem("queries", JSON.stringify(queries));

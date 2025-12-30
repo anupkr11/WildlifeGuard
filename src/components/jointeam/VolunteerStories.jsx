@@ -22,19 +22,16 @@ const VolunteerStories = () => {
   return (
     <section className="bg-green-50 py-20">
       <div className="max-w-7xl mx-auto px-6">
-        {/* TITLE */}
         <h2 className="text-5xl font-bold text-center mb-12">
           Our Volunteers Making a Difference
         </h2>
 
-        {/* GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {volunteers.map((v, i) => (
             <div
               key={i}
               className="bg-white rounded-2xl shadow-md p-8 text-center hover:shadow-lg transition"
             >
-              {/* AVATAR */}
               <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-green-200 flex items-center justify-center text-3xl">
                 {v.icon}
               </div>

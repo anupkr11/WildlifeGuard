@@ -20,7 +20,7 @@ const COLORS = {
 };
 
 const ConservationCharts = ({ data }) => {
-  // 🔹 COUNT BY CONSERVATION STATUS
+  // COUNT BY CONSERVATION STATUS
   const statusCount = data.reduce((acc, item) => {
     const status = item["Conservation Status"];
     if (!status) return acc;

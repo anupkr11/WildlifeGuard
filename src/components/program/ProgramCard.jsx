@@ -56,7 +56,7 @@ const ProgramCard = ({ program }) => {
             {program.Description}
           </p>
 
-          {/* META */}
+          {/* INFO */}
           <div className="text-sm text-gray-700 space-y-1">
             <p>
               <strong>Launched:</strong> {program["Year Launched"]}

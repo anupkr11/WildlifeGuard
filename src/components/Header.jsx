@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, TreePine } from "lucide-react";
+import { Menu, X} from "lucide-react";
+import logo from "../assets/icon.jpeg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,8 +25,8 @@ const Header = () => {
 
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-green-700 rounded-full flex items-center justify-center">
-              <TreePine className="text-white" size={28} />
+            <div className="w-12 h-12 rounded-full flex items-center justify-center">
+              <img src={logo} alt="Wildlife Guardian Icon" className="w-18 h-14" />
             </div>
             <span className="text-3xl font-bold text-gray-900">
               Guardians of Wildlife
@@ -58,7 +59,6 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden py-6 border-t space-y-3">
             {navLinks.map((link) => (
