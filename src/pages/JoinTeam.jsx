@@ -1,9 +1,9 @@
 import React from "react";
-import VolunteerForm from "../components/joinTeam/VolunteerForm";
-import MotivationCard from "../components/joinTeam/MotivationCard";
-import StatsBox from "../components/joinTeam/StatsBox";
-import WhyJoinUs from "../components/joinTeam/WhyJoinUs";
-import VolunteerStories from "../components/joinTeam/VolunteerStories";
+import VolunteerForm from "../components/jointeam/VolunteerForm";
+import MotivationCard from "../components/jointeam/MotivationCard";
+import StatsBox from "../components/jointeam/StatsBox";
+import WhyJoinUs from "../components/jointeam/WhyJoinUs";
+import VolunteerStories from "../components/jointeam/VolunteerStories";
 
 const JoinTeam = () => {
   return (
