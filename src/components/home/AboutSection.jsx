@@ -4,7 +4,7 @@ import { PrimaryButton } from "../ui/Buttons";
 const AboutSection = () => {
   return (
     <section className="py-25 bg-white">
-      <div className="max-w-8xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-10xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
         <img
           src="https://images.unsplash.com/photo-1589556183130-530470785fab"
           alt="Wildlife Conservation"
