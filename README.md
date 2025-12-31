@@ -175,6 +175,6 @@ It provides information about wildlife species, conservation programs, blogs, vo
 
 - Anup Kumar
 - Full Stack Developer
-- 📧 Email: your-email@example.com
+- 📧 Email: anup94622@gmail.com
 
 🔗 GitHub: https://github.com/anupkr11
