@@ -89,12 +89,18 @@ It provides information about wildlife species, conservation programs, blogs, vo
 
 ### Screenshots
 
+<img width="1900" height="907" alt="image" src="https://github.com/user-attachments/assets/f2964b57-dd5e-44b7-a6c0-f3ef6f414099" />
+<img width="1893" height="907" alt="image" src="https://github.com/user-attachments/assets/006f7326-643e-4950-a776-98f3acd4b026" />
+<img width="1890" height="905" alt="image" src="https://github.com/user-attachments/assets/a67399de-c622-46d7-bc5f-e2849d4d1333" />
+<img width="1884" height="902" alt="image" src="https://github.com/user-attachments/assets/eb8801b6-f26a-434b-8539-6b9322cbae20" />
+<img width="1885" height="898" alt="image" src="https://github.com/user-attachments/assets/3a0e1420-8953-485a-bc8a-290796e928b6" />
+<img width="1898" height="904" alt="image" src="https://github.com/user-attachments/assets/eece3bc3-9252-4e35-9f6c-cbff575b1b56" />
 
 ---
 
 ## 🌍 Live Demo
 
-- **Frontend (Vercel):** https://wildlifeguard.vercel.app  
+- **Frontend (Vercel):** https://wildlife-guard.vercel.app/  
 - **Backend API (Render):** https://wildlifeguard.onrender.com  
 
 ---
