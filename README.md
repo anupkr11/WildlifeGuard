@@ -7,8 +7,9 @@ It provides information about wildlife species, conservation programs, blogs, vo
 
 ## 🌍 Live Demo
 
-- **Frontend (Vercel):** https://wildlifeguard.vercel.app  
-- **Backend API (Render):** https://wildlifeguard.onrender.com  
+- **Frontend (Vercel):** https://wildlife-guard.vercel.app/
+- **Backend API (Render):** https://wildlifeguard.onrender.com
+- **Note** Backend endpoints are - /api/blog, /api/program, /api/wildlife
 
 ---
 
